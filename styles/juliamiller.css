@@ -1,12 +1,18 @@
 body {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
 }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 60%;
   text-align: center;
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('comic-sans-ms/comici.ttf');
 }
