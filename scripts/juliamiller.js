@@ -32,16 +32,16 @@ function setupCountdown() {
   );
 }
 
-const galleryDir = './resources/gallery/';
-const photoNames = [
-  // 'engaged.jpg',
-  // 'bunnydog.jpg',
-  // 'muir.jpg',
-  // 'marvinparty.jpg',
-  // 'marathon.jpg',
-];
-
 function loadPhotos() {
+  const galleryDir = './resources/gallery/';
+  const photoNames = [
+    // 'engaged.jpg',
+    // 'bunnydog.jpg',
+    // 'muir.jpg',
+    // 'marvinparty.jpg',
+    // 'marathon.jpg',
+  ];
+
   for (const photoName of photoNames) {
     const location = galleryDir + photoName;
 
