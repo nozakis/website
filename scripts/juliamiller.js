@@ -46,7 +46,7 @@ function loadPhotos() {
     const location = galleryDir + photoName;
 
     const imageElement = document.createElement('img');
-    imageElement.setAttribute('class', 'center');
+    imageElement.setAttribute('class', 'galleryimg');
     imageElement.setAttribute('src', location);
 
     const anchorElement = document.createElement('a');
