@@ -1,0 +1,16 @@
+resources/gallery/muir.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/posted.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/prom.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/us.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/cooking.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/engaged.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/hands.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/maine.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/marathon.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/tandem.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/eclipse.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/mountain.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/bunnydog.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/cabin.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/marvinparty.jpg filter=lfs diff=lfs merge=lfs -text
+resources/gallery/bay.jpg filter=lfs diff=lfs merge=lfs -text

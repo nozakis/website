@@ -35,11 +35,22 @@ function setupCountdown() {
 function loadPhotos() {
   const galleryDir = './resources/gallery/';
   const photoNames = [
-    // 'engaged.jpg',
-    // 'bunnydog.jpg',
-    // 'muir.jpg',
-    // 'marvinparty.jpg',
-    // 'marathon.jpg',
+    'engaged.jpg',
+    'bunnydog.jpg',
+    'cabin.jpg',
+    'marvinparty.jpg',
+    'mountain.jpg',
+    'marathon.jpg',
+    'bay.jpg',
+    'cooking.jpg',
+    'eclipse.jpg',
+    'hands.jpg',
+    'maine.jpg',
+    'muir.jpg',
+    'posted.jpg',
+    'prom.jpg',
+    'us.jpg',
+    'tandem.jpg',
   ];
 
   for (const photoName of photoNames) {
