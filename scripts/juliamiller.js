@@ -1,6 +1,6 @@
 function setupCountdown() {
   const countdownElementId = 'countdown';
-  const weddingDate = new Date('2025-08-30T17:00:00-04:00');
+  const weddingDate = new Date('2025-08-30T16:30:00-04:00');
   let intervalId = undefined;
 
   function getCountdownString() {
