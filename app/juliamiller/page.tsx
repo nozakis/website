@@ -26,7 +26,7 @@ const galleryPhotos = [
 
 export default function JuliaMiller() {
   return (
-    <div>
+    <>
       <Image
         src={headerPhoto}
         alt="Header Photo"
@@ -195,7 +195,7 @@ export default function JuliaMiller() {
         <br />
 
         <h1>Required Reading!</h1>
-        <p className="text-2xl">
+        <h2>
           <a
             href="https://www.zola.com/wedding/juliaandsamuel2025/registry"
             target="_blank"
@@ -203,13 +203,13 @@ export default function JuliaMiller() {
           >
             Our Registry
           </a>
-        </p>
-        <p className="text-2xl">
+        </h2>
+        <h2>
           <Link href="../juliamiller/travel">Travel & Lodging Details</Link>
-        </p>
-        <p className="text-2xl">
+        </h2>
+        <h2>
           <Link href="../juliamiller/faqs">Frequently Asked Questions</Link>
-        </p>
+        </h2>
         <ExperienceTheMajesty />
       </div>
       <div id="gallery" className="gallery">
@@ -229,6 +229,6 @@ export default function JuliaMiller() {
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

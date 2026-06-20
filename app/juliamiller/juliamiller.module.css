@@ -10,6 +10,7 @@
   font-family:
     "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
   color: black;
+  padding-bottom: 120px;
 }
 
 .route :global(.pageColumn) {
@@ -26,6 +27,7 @@
 }
 
 .route :global(.gallery) {
+  align-items: center;
   display: grid;
   gap: 8px;
   grid-template-columns: minmax(0, min(100%, 600px));
@@ -44,7 +46,6 @@
   height: auto;
   max-width: 100%;
   padding: 4px;
-  vertical-align: middle;
   width: 100%;
 }
 
