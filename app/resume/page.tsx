@@ -1,68 +1,84 @@
 import Link from "next/link";
 
 export default function Resume() {
-  return(
+  return (
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
       <div className="w-full max-w-sm">
         <h1>Resume</h1>
 
         <h2>Experience</h2>
 
-        <p><b>Senior Software Engineer</b> | <em>Cantina</em> | May 2022 - Present</p>
+        <p>
+          <b>Senior Software Engineer</b> | <em>Cantina</em> | May 2022 -
+          Present
+        </p>
         <ul>
           <li>
-            Developing and maintaining a TypeScript SDK to facilitate WebRTC audio and video streaming for the Cantina webapp
+            Developing and maintaining a TypeScript SDK to facilitate WebRTC
+            audio and video streaming for the Cantina webapp
           </li>
           <li>
-            Seamlessly integrated the robust SDK into the Cantina webapp, thereby improving the application&apos;s reliability
-            in addition to clarifying separations of concerns, improving visibility through clear and concise logging, and
-            simplifying the development process overall
-          </li>
-        </ul>
-
-        <p><b>Software Engineer</b> | <em>Wayfair</em> | September 2019 - May 2022</p>
-        <ul>
-          <li>
-            Designed, built, and maintained C# microservices to facilitate Wayfair&apos;s
-            global supply chain
-          </li>
-          <li>
-            Integrated a machine learning model into the delivery date prediction
-            pipeline to improve the customer experience
-          </li>
-          <li>
-            Implemented tooling to allow operators to conduct customs transactions
-            without manual engineering intervention, saving countless person-hours
-            of engineering work
-          </li>
-          <li>
-            Designed and built a service to detect deviations from expected rates of
-            order assignment and automatically adjust transportation plans in
-            response
+            Seamlessly integrated the robust SDK into the Cantina webapp,
+            thereby improving the application&apos;s reliability in addition to
+            clarifying separations of concerns, improving visibility through
+            clear and concise logging, and simplifying the development process
+            overall
           </li>
         </ul>
 
         <p>
-          <b>Computer Science Department Course Staff</b> | <em>Carleton College</em> | September 2017 - June 2019
+          <b>Software Engineer</b> | <em>Wayfair</em> | September 2019 - May
+          2022
         </p>
         <ul>
           <li>
-            Graded and provided assistance to students using the computer labs for
-            computer science-related schoolwork
+            Designed, built, and maintained C# microservices to facilitate
+            Wayfair&apos;s global supply chain
+          </li>
+          <li>
+            Integrated a machine learning model into the delivery date
+            prediction pipeline to improve the customer experience
+          </li>
+          <li>
+            Implemented tooling to allow operators to conduct customs
+            transactions without manual engineering intervention, saving
+            countless person-hours of engineering work
+          </li>
+          <li>
+            Designed and built a service to detect deviations from expected
+            rates of order assignment and automatically adjust transportation
+            plans in response
           </li>
         </ul>
 
-        <p><b>Academic Technology Support Assistant</b> | <em>Carleton College</em> | June - August 2017</p>
+        <p>
+          <b>Computer Science Department Course Staff</b> |{" "}
+          <em>Carleton College</em> | September 2017 - June 2019
+        </p>
+        <ul>
+          <li>
+            Graded and provided assistance to students using the computer labs
+            for computer science-related schoolwork
+          </li>
+        </ul>
+
+        <p>
+          <b>Academic Technology Support Assistant</b> |{" "}
+          <em>Carleton College</em> | June - August 2017
+        </p>
         <ul>
           <li>Grails full-stack software engineer</li>
           <li>
-            Implemented faculty-requested features for in-house language learning
-            software
+            Implemented faculty-requested features for in-house language
+            learning software
           </li>
         </ul>
 
         <h2>Education</h2>
-        <p><b>Bachelor of Arts, Computer Science</b> | <em>Carleton College</em> | September 2015 - June 2019</p>
+        <p>
+          <b>Bachelor of Arts, Computer Science</b> | <em>Carleton College</em>{" "}
+          | September 2015 - June 2019
+        </p>
 
         <p>
           <Link href="/">Back</Link>

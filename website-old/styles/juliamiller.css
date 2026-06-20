@@ -1,7 +1,12 @@
 body {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family:
+    "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", sans-serif;
 }
 
 .center {
@@ -26,12 +31,12 @@ body {
   max-width: 600px;
 }
 
-a:link{
-  color:blue;
+a:link {
+  color: blue;
 }
-a:visited{
-  color:blue;
+a:visited {
+  color: blue;
 }
-a:hover{
-  color:darkblue;
+a:hover {
+  color: darkblue;
 }

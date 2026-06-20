@@ -11,7 +11,5 @@ export default function JuliaMillerLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <main className={styles.route}>{children}</main>
-  );
+  return <main className={styles.route}>{children}</main>;
 }
