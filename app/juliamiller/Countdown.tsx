@@ -8,7 +8,7 @@ function getCountdownString(now: number) {
   const distance = weddingDate - now;
 
   if (distance <= 0) {
-    return "Wedding!";
+    return "Wedding countdown complete!";
   }
 
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -50,7 +50,7 @@ export default function Countdown() {
 
   return (
     <p
-      className="text-2xl"
+      className="text-4xl"
       id="countdown"
       style={hasWeddingArrived ? { color: textRgb } : undefined}
     >

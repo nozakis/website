@@ -2,8 +2,8 @@ import Image from "next/image";
 import Countdown from "./Countdown";
 import headerPhoto from "@/public/headerphoto.png";
 import rsvpGif from "@/public/rsvp.gif";
-import centralMassGif from "@/public/centralmass.gif";
 import Link from "next/dist/client/link";
+import ExperienceTheMajesty from "./ExperienceTheMajesty";
 
 const galleryPhotos = [
   "engaged.jpg",
@@ -27,13 +27,24 @@ const galleryPhotos = [
 export default function JuliaMiller() {
   return (
     <div>
-      <Image src={headerPhoto} alt="Header Photo" className="center" />
-      <div className="center">
+      <Image
+        src={headerPhoto}
+        alt="Header Photo"
+        className="centeredMedia w-[75%] max-w-[1200px] mt-4"
+        loading="eager"
+      />
+      <div className="pageColumn">
         <a
           href="https://www.zola.com/wedding/juliaandsamuel2025/rsvp"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          <Image src={rsvpGif} alt="RSVP" className="center" />
+          <Image
+            src={rsvpGif}
+            alt="RSVP"
+            className="centeredMedia w-[65%]"
+            unoptimized
+          />
         </a>
         <h1>WHO? Samuel and Julia!</h1>
         <h1>WHAT? Wedding!</h1>
@@ -199,19 +210,14 @@ export default function JuliaMiller() {
         <p className="text-2xl">
           <Link href="../juliamiller/faqs">Frequently Asked Questions</Link>
         </p>
-
-        <Image
-          src={centralMassGif}
-          className="center max-w-full"
-          alt="Central Mass Gif"
-        />
+        <ExperienceTheMajesty />
       </div>
       <div id="gallery" className="gallery">
         {galleryPhotos.map((photo) => {
           const src = `/gallery/${photo}`;
 
           return (
-            <a href={src} key={photo} target="_blank" rel="noreferrer">
+            <a href={src} key={photo} target="_blank" rel="noopener noreferrer">
               <Image
                 src={src}
                 alt=""

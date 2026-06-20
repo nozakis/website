@@ -1,25 +1,19 @@
 import Image from "next/image";
-import Link from "next/link";
-import house from "@/public/house.png";
 import travelandlodging from "@/public/travelandlodging.png";
 import plane from "@/public/plane.png";
-import centralmass from "@/public/centralmass.gif";
+import ExperienceTheMajesty from "../ExperienceTheMajesty";
+import GoBack from "../GoBack";
 
 export default function Travel() {
   return (
     <div>
-      <div className="center">
-        <Link href="../juliamiller">
-          <h2>
-            <Image src={house} className="w-1/10" alt="Go back" />
-            <br />
-            Go back!
-          </h2>
-        </Link>
+      <div className="pageColumn">
+        <GoBack />
         <Image
           src={travelandlodging}
-          className="center max-w-full"
+          className="centeredMedia w-[80%] max-w-[1200px]"
           alt="Travel and Lodging"
+          loading="eager"
         />
         <br />
         <h2>We have blocks at two (2) hotels for August 29-31!</h2>
@@ -88,7 +82,11 @@ export default function Travel() {
         <br />
         <br />
 
-        <Image src={plane} className="center max-w-3/10" alt="Plane" />
+        <Image
+          src={plane}
+          className="centeredMedia w-[30%] max-w-[500px]"
+          alt="Plane"
+        />
         <h2>Flying into PVD?</h2>
         <p className="text-xl">We recommend driving to Worcester (~1 hour).</p>
         <br />
@@ -100,11 +98,7 @@ export default function Travel() {
           MBTA Commuter Rail is a wonderful option (~2 hours).
         </p>
 
-        <Image
-          src={centralmass}
-          className="center max-w-full"
-          alt="Central Mass Gif"
-        />
+        <ExperienceTheMajesty />
       </div>
     </div>
   );

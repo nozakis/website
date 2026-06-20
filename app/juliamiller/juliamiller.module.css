@@ -12,26 +12,46 @@
   color: black;
 }
 
-.route :global(.center) {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60%;
+.route :global(.pageColumn) {
+  margin-inline: auto;
+  width: 65%;
+  max-width: 700px;
   text-align: center;
+}
+
+.route :global(.centeredMedia) {
+  display: block;
+  height: auto;
+  margin-inline: auto;
 }
 
 .route :global(.gallery) {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: minmax(0, min(100%, 600px));
+  justify-content: center;
+  margin-inline: auto;
+  width: min(90%, 1240px);
   text-align: center;
 }
 
+.route :global(.gallery) a {
+  display: block;
+}
+
 .route :global(.galleryimg) {
+  display: block;
+  height: auto;
+  max-width: 100%;
   padding: 4px;
   vertical-align: middle;
-  max-width: 600px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .route :global(.gallery) {
+    grid-template-columns: repeat(2, minmax(0, 600px));
+  }
 }
 
 .route a:link,

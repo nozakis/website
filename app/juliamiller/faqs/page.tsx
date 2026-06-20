@@ -1,21 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import house from "@/public/house.png";
 import faqs from "@/public/faqs.png";
-import centralMassGif from "@/public/centralmass.gif";
+import ExperienceTheMajesty from "../ExperienceTheMajesty";
+import GoBack from "../GoBack";
 
 export default function Faqs() {
   return (
     <div>
-      <div className="center">
-        <Link href="../juliamiller">
-          <h2>
-            <Image src={house} alt="House" className="w-1/10" />
-            <br />
-            Go back!
-          </h2>
-        </Link>
-        <Image src={faqs} alt="FAQs" className="center" />
+      <div className="pageColumn">
+        <GoBack />
+        <Image
+          src={faqs}
+          alt="FAQs"
+          className="centeredMedia w-[80%] max-w-[1200px]"
+          loading="eager"
+        />
 
         <h2>What&apos;s the dress code?</h2>
         <p className="text-xl">
@@ -46,7 +45,9 @@ export default function Faqs() {
         <h2>How should I get there? Where should I stay?</h2>
         <p className="text-xl">
           Please consult the{" "}
-          <Link href="../travel">travel and lodging materials.</Link>
+          <Link href="../juliamiller/travel">
+            travel and lodging materials.
+          </Link>
         </p>
 
         <br />
@@ -78,11 +79,7 @@ export default function Faqs() {
           free to reach out.
         </p>
 
-        <Image
-          src={centralMassGif}
-          alt="Central Mass"
-          className="center max-w-full"
-        />
+        <ExperienceTheMajesty />
       </div>
     </div>
   );
